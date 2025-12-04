@@ -1,0 +1,245 @@
+About diracx-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diracx-feedstock/blob/main/LICENSE.txt)
+
+
+About diracx
+------------
+
+Home: https://github.com/DIRACGrid/DIRAC/tree/integration/dirac-common
+
+Package license: GPL-3.0-only
+
+Summary: Stateless utilities extracted from DIRAC for use by DiracX and other projects
+
+Development: https://github.com/DIRACGrid/DIRAC
+
+Documentation: https://dirac.readthedocs.io/
+
+About diracx
+------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Client installation for users of DiracX installations
+
+About diracx-api
+----------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Python API for interacting with DiracX services
+
+About diracx-cli
+----------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Command line interface for DiracX
+
+About diracx-client
+-------------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Client library for DiracX services from OpenAPI specifications
+
+About diracx-core
+-----------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Common code used by all DiracX packages
+
+About diracx-db
+---------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Data Access Layer for DiracX database functionalities
+
+About diracx-logic
+------------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Business Logic Layer containing DiracX logic
+
+About diracx-routers
+--------------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: FastAPI routers providing HTTP endpoints for DiracX services
+
+About diracx-testing
+--------------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Testing utilities and fixtures for DiracX development
+
+Current build status
+====================
+
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26999&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/diracx-feedstock?branchName=main">
+      </a>
+    </td>
+  </tr>
+</table>
+
+Current release info
+====================
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diraccommon-green.svg)](https://anaconda.org/conda-forge/diraccommon) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diraccommon.svg)](https://anaconda.org/conda-forge/diraccommon) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diraccommon.svg)](https://anaconda.org/conda-forge/diraccommon) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diraccommon.svg)](https://anaconda.org/conda-forge/diraccommon) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx-green.svg)](https://anaconda.org/conda-forge/diracx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx.svg)](https://anaconda.org/conda-forge/diracx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx.svg)](https://anaconda.org/conda-forge/diracx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx.svg)](https://anaconda.org/conda-forge/diracx) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--api-green.svg)](https://anaconda.org/conda-forge/diracx-api) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-api.svg)](https://anaconda.org/conda-forge/diracx-api) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-api.svg)](https://anaconda.org/conda-forge/diracx-api) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-api.svg)](https://anaconda.org/conda-forge/diracx-api) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--cli-green.svg)](https://anaconda.org/conda-forge/diracx-cli) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-cli.svg)](https://anaconda.org/conda-forge/diracx-cli) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-cli.svg)](https://anaconda.org/conda-forge/diracx-cli) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-cli.svg)](https://anaconda.org/conda-forge/diracx-cli) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--client-green.svg)](https://anaconda.org/conda-forge/diracx-client) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-client.svg)](https://anaconda.org/conda-forge/diracx-client) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-client.svg)](https://anaconda.org/conda-forge/diracx-client) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-client.svg)](https://anaconda.org/conda-forge/diracx-client) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--core-green.svg)](https://anaconda.org/conda-forge/diracx-core) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-core.svg)](https://anaconda.org/conda-forge/diracx-core) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-core.svg)](https://anaconda.org/conda-forge/diracx-core) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-core.svg)](https://anaconda.org/conda-forge/diracx-core) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--db-green.svg)](https://anaconda.org/conda-forge/diracx-db) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-db.svg)](https://anaconda.org/conda-forge/diracx-db) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-db.svg)](https://anaconda.org/conda-forge/diracx-db) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-db.svg)](https://anaconda.org/conda-forge/diracx-db) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--logic-green.svg)](https://anaconda.org/conda-forge/diracx-logic) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-logic.svg)](https://anaconda.org/conda-forge/diracx-logic) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-logic.svg)](https://anaconda.org/conda-forge/diracx-logic) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-logic.svg)](https://anaconda.org/conda-forge/diracx-logic) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--routers-green.svg)](https://anaconda.org/conda-forge/diracx-routers) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-routers.svg)](https://anaconda.org/conda-forge/diracx-routers) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-routers.svg)](https://anaconda.org/conda-forge/diracx-routers) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-routers.svg)](https://anaconda.org/conda-forge/diracx-routers) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--testing-green.svg)](https://anaconda.org/conda-forge/diracx-testing) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-testing.svg)](https://anaconda.org/conda-forge/diracx-testing) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-testing.svg)](https://anaconda.org/conda-forge/diracx-testing) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-testing.svg)](https://anaconda.org/conda-forge/diracx-testing) |
+
+Installing diracx
+=================
+
+Installing `diracx` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+
+```
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
+Once the `conda-forge` channel has been enabled, `diraccommon, diracx, diracx-api, diracx-cli, diracx-client, diracx-core, diracx-db, diracx-logic, diracx-routers, diracx-testing` can be installed with `conda`:
+
+```
+conda install diraccommon diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
+```
+
+or with `mamba`:
+
+```
+mamba install diraccommon diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
+```
+
+It is possible to list all of the versions of `diraccommon` available on your platform with `conda`:
+
+```
+conda search diraccommon --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search diraccommon --channel conda-forge
+```
+
+Alternatively, `mamba repoquery` may provide more information:
+
+```
+# Search all versions available on your platform:
+mamba repoquery search diraccommon --channel conda-forge
+
+# List packages depending on `diraccommon`:
+mamba repoquery whoneeds diraccommon --channel conda-forge
+
+# List dependencies of `diraccommon`:
+mamba repoquery depends diraccommon --channel conda-forge
+```
+
+
+About conda-forge
+=================
+
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
+
+conda-forge is a community-led conda channel of installable packages.
+In order to provide high-quality builds, the process has been automated into the
+conda-forge GitHub organization. The conda-forge organization contains one repository
+for each of the installable packages. Such a repository is known as a *feedstock*.
+
+A feedstock is made up of a conda recipe (the instructions on what and how to build
+the package) and the necessary configurations for automatic building using freely
+available continuous integration services. Thanks to the awesome service provided by
+[Azure](https://azure.microsoft.com/en-us/services/devops/), [GitHub](https://github.com/),
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
+[Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
+it is possible to build and upload installable packages to the
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
+channel for Linux, Windows and OSX respectively.
+
+To manage the continuous integration and simplify feedstock maintenance,
+[conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
+Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
+this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
+
+For more information, please check the [conda-forge documentation](https://conda-forge.org/docs/).
+
+Terminology
+===========
+
+**feedstock** - the conda recipe (raw material), supporting scripts and CI configuration.
+
+**conda-smithy** - the tool which helps orchestrate the feedstock.
+                   Its primary use is in the construction of the CI ``.yml`` files
+                   and simplify the management of *many* feedstocks.
+
+**conda-forge** - the place where the feedstock and smithy live and work to
+                  produce the finished article (built conda distributions)
+
+
+Updating diracx-feedstock
+=========================
+
+If you would like to improve the diracx recipe or build a new
+package version, please fork this repository and submit a PR. Upon submission,
+your changes will be run on the appropriate platforms to give the reviewer an
+opportunity to confirm that the changes result in a successful build. Once
+merged, the recipe will be re-built and uploaded automatically to the
+`conda-forge` channel, whereupon the built conda packages will be available for
+everybody to install and use from the `conda-forge` channel.
+Note that all branches in the conda-forge/diracx-feedstock are
+immediately built and any created packages are uploaded, so PRs should be based
+on branches in forks, and branches in the main repository should only be used to
+build distinct package versions.
+
+In order to produce a uniquely identifiable distribution:
+ * If the version of a package **is not** being increased, please add or increase
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
+ * If the version of a package **is** being increased, please remember to return
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
+   back to 0.
+
+Feedstock Maintainers
+=====================
+
+* [@chrisburr](https://github.com/chrisburr/)
+
