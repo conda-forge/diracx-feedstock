@@ -10,48 +10,6 @@ build:
   number: 0
 
 outputs:
-  # TODO: This should move to the dirac-grid feedstock but for the first release there is a bootstrap issue with DiracX
-  - package:
-      name: diraccommon
-      version: 9.0.11
-
-    source:
-      - url: https://pypi.org/packages/source/d/diraccommon/diraccommon-9.0.11.tar.gz
-        sha256: f5223f57917b5823150354933cef87e973ee126aea62c638e66a654d40c9fbbb
-      - url: https://raw.githubusercontent.com/DIRACGrid/DIRAC/refs/tags/v9.0.11/LICENSE
-        sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
-
-    build:
-      script: ${{ PYTHON }} -m pip install .
-      noarch: python
-
-    requirements:
-      host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
-      run:
-      - python >=${{ python_min }}
-      - diraccfg
-      - pydantic >=2.0.0
-      - typing-extensions >=4.0.0
-
-    tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - DIRACCommon
-        pip_check: true
-
-    about:
-      homepage: https://github.com/DIRACGrid/DIRAC/tree/integration/dirac-common
-      summary: Stateless utilities extracted from DIRAC for use by DiracX and other projects
-      license: GPL-3.0-only
-      repository: https://github.com/DIRACGrid/DIRAC
-      documentation: https://dirac.readthedocs.io/
-
-
   - package:
       name: diracx-api
 
