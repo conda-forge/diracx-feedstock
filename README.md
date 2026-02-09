@@ -7,19 +7,6 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diracx-feedstoc
 About diracx
 ------------
 
-Home: https://github.com/DIRACGrid/DIRAC/tree/integration/dirac-common
-
-Package license: GPL-3.0-only
-
-Summary: Stateless utilities extracted from DIRAC for use by DiracX and other projects
-
-Development: https://github.com/DIRACGrid/DIRAC
-
-Documentation: https://dirac.readthedocs.io/
-
-About diracx
-------------
-
 Home: https://diracx.diracgrid.org/
 
 Package license: GPL-3.0-only
@@ -116,7 +103,6 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-diraccommon-green.svg)](https://anaconda.org/conda-forge/diraccommon) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diraccommon.svg)](https://anaconda.org/conda-forge/diraccommon) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diraccommon.svg)](https://anaconda.org/conda-forge/diraccommon) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diraccommon.svg)](https://anaconda.org/conda-forge/diraccommon) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-diracx-green.svg)](https://anaconda.org/conda-forge/diracx) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx.svg)](https://anaconda.org/conda-forge/diracx) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx.svg)](https://anaconda.org/conda-forge/diracx) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx.svg)](https://anaconda.org/conda-forge/diracx) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--api-green.svg)](https://anaconda.org/conda-forge/diracx-api) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-api.svg)](https://anaconda.org/conda-forge/diracx-api) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-api.svg)](https://anaconda.org/conda-forge/diracx-api) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-api.svg)](https://anaconda.org/conda-forge/diracx-api) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--cli-green.svg)](https://anaconda.org/conda-forge/diracx-cli) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-cli.svg)](https://anaconda.org/conda-forge/diracx-cli) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-cli.svg)](https://anaconda.org/conda-forge/diracx-cli) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-cli.svg)](https://anaconda.org/conda-forge/diracx-cli) |
@@ -137,41 +123,41 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `diraccommon, diracx, diracx-api, diracx-cli, diracx-client, diracx-core, diracx-db, diracx-logic, diracx-routers, diracx-testing` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `diracx, diracx-api, diracx-cli, diracx-client, diracx-core, diracx-db, diracx-logic, diracx-routers, diracx-testing` can be installed with `conda`:
 
 ```
-conda install diraccommon diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
-```
-
-or with `mamba`:
-
-```
-mamba install diraccommon diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
-```
-
-It is possible to list all of the versions of `diraccommon` available on your platform with `conda`:
-
-```
-conda search diraccommon --channel conda-forge
+conda install diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
 ```
 
 or with `mamba`:
 
 ```
-mamba search diraccommon --channel conda-forge
+mamba install diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
+```
+
+It is possible to list all of the versions of `diracx` available on your platform with `conda`:
+
+```
+conda search diracx --channel conda-forge
+```
+
+or with `mamba`:
+
+```
+mamba search diracx --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search diraccommon --channel conda-forge
+mamba repoquery search diracx --channel conda-forge
 
-# List packages depending on `diraccommon`:
-mamba repoquery whoneeds diraccommon --channel conda-forge
+# List packages depending on `diracx`:
+mamba repoquery whoneeds diracx --channel conda-forge
 
-# List dependencies of `diraccommon`:
-mamba repoquery depends diraccommon --channel conda-forge
+# List dependencies of `diracx`:
+mamba repoquery depends diracx --channel conda-forge
 ```
 
 
