@@ -1,5 +1,5 @@
 context:
-  version: 0.0.8
+  version: "0.0.9"
   python_min: "3.11"
 
 recipe:
@@ -15,7 +15,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-api/diracx_api-${{ version }}.tar.gz
-        sha256: d663bf34494c60a0c02bf89cebf1bf27f8f9786d7733108a362fd7ad79806018
+        sha256: 4a328d270e17a046d4c4f728efa7626589ff5710ac747bc61b4605290f89d16e
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -25,23 +25,23 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - diracx-client ==${{ version }}
-      - diracx-core ==${{ version }}
-      - httpx
-      - zstandard
+        - python >=${{ python_min }}
+        - diracx-client ==${{ version }}
+        - diracx-core ==${{ version }}
+        - httpx
+        - zstandard
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.api
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.api
+          pip_check: true
 
     about:
       summary: Python API for interacting with DiracX services
@@ -51,7 +51,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-cli/diracx_cli-${{ version }}.tar.gz
-        sha256: 1b820af30d8526f6337700051f08f42705394d3e2cab69aa857d7799981044a4
+        sha256: b14f74b402ba73a5c583551347cd67decce5af7100339cfd910edbc3ea9a6a29
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -59,35 +59,35 @@ outputs:
       script: ${{ PYTHON }} -m pip install .
       python:
         entry_points:
-        - dirac = diracx.cli:app
+          - dirac = diracx.cli:app
       noarch: python
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - diraccfg
-      - diracx-api ==${{ version }}
-      - diracx-client ==${{ version }}
-      - diracx-core ==${{ version }}
-      - gitpython
-      - pydantic >=2.10
-      - pyyaml
-      - rich
-      - typer >=0.15.4
+        - python >=${{ python_min }}
+        - diraccfg
+        - diracx-api ==${{ version }}
+        - diracx-client ==${{ version }}
+        - diracx-core ==${{ version }}
+        - gitpython
+        - pydantic >=2.10
+        - pyyaml
+        - rich
+        - typer >=0.15.4
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.cli
-        pip_check: true
-    - script:
-      - dirac --help
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.cli
+          pip_check: true
+      - script:
+          - dirac --help
 
     about:
       summary: Command line interface for DiracX
@@ -97,7 +97,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-client/diracx_client-${{ version }}.tar.gz
-        sha256: 4085debefdf9295963973a5f7b91d9ff913d613500cefc11afdb935f08fbc1a5
+        sha256: ed63f9133f0b7b95e3a7fe54a5e4d9b4756d2c43bc9174b81949cc1ec8d9975b
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -107,24 +107,24 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - azure-core
-      - diracx-core ==${{ version }}
-      - httpx
-      - isodate
-      - pyjwt
+        - python >=${{ python_min }}
+        - azure-core
+        - diracx-core ==${{ version }}
+        - httpx
+        - isodate
+        - pyjwt
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.client
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.client
+          pip_check: true
 
     about:
       summary: Client library for DiracX services from OpenAPI specifications
@@ -134,7 +134,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-core/diracx_core-${{ version }}.tar.gz
-        sha256: 69b90d063de86c620ec092029a0ba3847794c4eadfbf8080fddcae95eb68f6ca
+        sha256: bc465218c0514d7353a0951abeca06422e6e9e0d8786bf669aa9134cbad2164e
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -144,30 +144,30 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - aiobotocore >=2.15
-      - botocore >=1.35
-      - cachetools
-      - diraccommon >=9.0.0
-      - email-validator
-      - gitpython
-      - joserfc >=1.1.0
-      - pydantic-settings
-      - pydantic >=2.10
-      - pyyaml
-      - sh
+        - python >=${{ python_min }}
+        - aiobotocore >=2.15
+        - botocore >=1.35
+        - cachetools
+        - diraccommon >=9.0.0
+        - email-validator
+        - gitpython
+        - joserfc >=1.1.0
+        - pydantic-settings
+        - pydantic >=2.10
+        - pyyaml
+        - sh
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.core
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.core
+          pip_check: true
 
     about:
       summary: Common code used by all DiracX packages
@@ -178,7 +178,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-db/diracx_db-${{ version }}.tar.gz
-        sha256: a64d47a3093139b0aaaba4f24eaa22fd29533a9b42101bed397766aa9c4fb8cf
+        sha256: 3327dba9539b7a3a45fd1a2b3c47581eef6da45ad3bf06c5f01ee93654c47692
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -188,37 +188,37 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - diracx-core ==${{ version }}
-      - opensearch-py
-      - aiohttp>=3.12.14,<4  # Needed for opensearch-py's async extra
-      - pydantic >=2.10
-      - python-dateutil
-      - sqlalchemy-with-aiomysql
-      - sqlalchemy-with-aiosqlite
-      - uuid-utils
+        - python >=${{ python_min }}
+        - diracx-core ==${{ version }}
+        - opensearch-py
+        - aiohttp>=3.12.14,<4 # Needed for opensearch-py's async extra
+        - pydantic >=2.10
+        - python-dateutil
+        - sqlalchemy-with-aiomysql
+        - sqlalchemy-with-aiosqlite
+        - uuid-utils
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.db
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.db
+          pip_check: true
 
     about:
       summary: Data Access Layer for DiracX database functionalities
-  
+
   - package:
       name: diracx-logic
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-logic/diracx_logic-${{ version }}.tar.gz
-        sha256: f89f2b0ca9b271a54f209f1c0de42643800d4151dbe37bd85ce4f619c5f58ea2
+        sha256: 984b3a1e26fb3a1308b8d81a30129f37f022dbb2dac4a2f2adce09c8f4de5630
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -228,26 +228,26 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - cachetools
-      - diraccommon >=9.0.0
-      - diracx-core ==${{ version }}
-      - diracx-db ==${{ version }}
-      - joserfc
-      - pydantic >=2.10
-      - uuid-utils
+        - python >=${{ python_min }}
+        - cachetools
+        - diraccommon >=9.0.0
+        - diracx-core ==${{ version }}
+        - diracx-db ==${{ version }}
+        - joserfc
+        - pydantic >=2.10
+        - uuid-utils
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.logic
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.logic
+          pip_check: true
 
     about:
       summary: Business Logic Layer containing DiracX logic
@@ -259,7 +259,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-routers/diracx_routers-${{ version }}.tar.gz
-        sha256: d35474130873d525e375ee28562ee1f88f599623008033bdb63f64b75a21ee5c
+        sha256: 6d27e5c1dfe958316f09ae8b77e4bcea00dc14448424e8e720a2dcadf44f88cc
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -269,35 +269,35 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - cachetools
-      - diracx-core ==${{ version }}
-      - diracx-db ==${{ version }}
-      - diracx-logic ==${{ version }}
-      - fastapi
-      - httpx
-      - joserfc
-      - opentelemetry-api
-      - opentelemetry-exporter-otlp
-      - opentelemetry-instrumentation-fastapi
-      - opentelemetry-instrumentation-logging
-      - opentelemetry-sdk
-      - pydantic >=2.10
-      - python-dotenv
-      - python-multipart
-      - uvicorn
+        - python >=${{ python_min }}
+        - cachetools
+        - diracx-core ==${{ version }}
+        - diracx-db ==${{ version }}
+        - diracx-logic ==${{ version }}
+        - fastapi
+        - httpx
+        - joserfc
+        - opentelemetry-api
+        - opentelemetry-exporter-otlp
+        - opentelemetry-instrumentation-fastapi
+        - opentelemetry-instrumentation-logging
+        - opentelemetry-sdk
+        - pydantic >=2.10
+        - python-dotenv
+        - python-multipart
+        - uvicorn
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.routers
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.routers
+          pip_check: true
 
     about:
       summary: FastAPI routers providing HTTP endpoints for DiracX services
@@ -307,7 +307,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-testing/diracx_testing-${{ version }}.tar.gz
-        sha256: b86c614a327754deb1cb9ec2af4300d5cbb6d0f9ea3c142e74a6ce7a8e4df3fd
+        sha256: f80b35da9dd9429c3421e567ba700dee2a2ce3208ccb39f0746399e6e2c5031c
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -317,29 +317,29 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - diracx-core ==${{ version }}
-      - httpx
-      - joserfc
-      - pytest
-      - pytest-asyncio >=1.1.0
-      - pytest-cov
-      - pytest-github-actions-annotate-failures
-      - pytest-lazy-fixtures
-      - pytest-xdist
-      - uuid-utils
+        - python >=${{ python_min }}
+        - diracx-core ==${{ version }}
+        - httpx
+        - joserfc
+        - pytest
+        - pytest-asyncio >=1.1.0
+        - pytest-cov
+        - pytest-github-actions-annotate-failures
+        - pytest-lazy-fixtures
+        - pytest-xdist
+        - uuid-utils
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx.testing
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.testing
+          pip_check: true
 
     about:
       summary: Testing utilities and fixtures for DiracX development
@@ -349,7 +349,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx/diracx-${{ version }}.tar.gz
-        sha256: d4dc46f8962059c040d2418204dd04169a633e0ff7632c6b52a15a815b57e5c4
+        sha256: 00bfa83a733e0099abf4c9e45bdaf4792f69250699540dde494045ef335bad99
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -359,27 +359,27 @@ outputs:
 
     requirements:
       host:
-      - python ${{ python_min }}.*
-      - hatchling
-      - hatch-vcs
-      - pip
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
       run:
-      - python >=${{ python_min }}
-      - diracx-api ==${{ version }}
-      - diracx-cli ==${{ version }}
-      - diracx-client ==${{ version }}
-      - diracx-core ==${{ version }}
+        - python >=${{ python_min }}
+        - diracx-api ==${{ version }}
+        - diracx-cli ==${{ version }}
+        - diracx-client ==${{ version }}
+        - diracx-core ==${{ version }}
 
     tests:
-    - python:
-        python_version: ${{ python_min }}.*
-        imports:
-        - diracx
-        - diracx.core
-        - diracx.api
-        - diracx.cli
-        - diracx.client
-        pip_check: true
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx
+            - diracx.core
+            - diracx.api
+            - diracx.cli
+            - diracx.client
+          pip_check: true
 
     about:
       summary: Client installation for users of DiracX installations
