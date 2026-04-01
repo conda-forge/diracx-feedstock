@@ -1,5 +1,5 @@
 context:
-  version: "0.0.10"
+  version: "0.0.12"
   python_min: "3.11"
 
 recipe:
@@ -15,7 +15,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-api/diracx_api-${{ version }}.tar.gz
-        sha256: e9fb9f1e0861870ea49e08873e969c7a89605256b8bb5df8d89c4179cb979f0d
+        sha256: b99732a2acdb36f37e0f9f5f81e64ce671d21d2052d89a3be613b7e29ca75596
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -51,7 +51,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-cli/diracx_cli-${{ version }}.tar.gz
-        sha256: 7cdc595d6026c5ae9ef34da73750252721ea432b7a32325961b35868a05331e6
+        sha256: 1ff5549c93a48fcdff34952b8f6643ca111c64affaa71f067b4248ef6d9f557e
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -97,7 +97,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-client/diracx_client-${{ version }}.tar.gz
-        sha256: 1d714bf91156efd74600cd71c04f34d2f598e9f7d295a37d6757d7d5b5c697b8
+        sha256: b404aca03767249c83157ade05029a56c73663b6a3998d57daf702f35c61d424
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -134,7 +134,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-core/diracx_core-${{ version }}.tar.gz
-        sha256: bee07b4e7456520d8336db6b4230cf593be923149c28761e5cee4ed7f752ea83
+        sha256: 3c2a7f80d25302b864189494a047c4f9008ace87f912fc5d2e67883912d903c5
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -178,7 +178,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-db/diracx_db-${{ version }}.tar.gz
-        sha256: 413fce9e7ec83bd2ee1830a1e49cd6ead2c465eabbacc917fac06e0dbb98e9bf
+        sha256: 245e4c78ab1e10d9990357992c8082738c90578e3c4640f326754bbaea6f0997
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -218,7 +218,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-logic/diracx_logic-${{ version }}.tar.gz
-        sha256: 3ffe6435d7b35ea4b1ae661ad9ab05d139fd9049c4556a81d94e16e0bc654026
+        sha256: 225652e1d6ebb911fc9c2551be1e688061da8536e26b952081fae1ec73774c6d
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -259,7 +259,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-routers/diracx_routers-${{ version }}.tar.gz
-        sha256: 379698bc677c48c236ddcf2e6f6cfe2abb683dbeff9780ed85d060475625cb5e
+        sha256: 970e744d688a95093d9019f42d6d06bbff9e92417fa59edb1d1371d52e5ee099
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -307,7 +307,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx-testing/diracx_testing-${{ version }}.tar.gz
-        sha256: 2a1e7427891136338b8b6c825820c629bc57054017be7ad9a05e358214ca09e7
+        sha256: 02986394fa7a4ebaea638a8010a8e406d87248bef0b243bb01b8d528dafc0d5d
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
@@ -349,7 +349,7 @@ outputs:
 
     source:
       - url: https://pypi.org/packages/source/d/diracx/diracx-${{ version }}.tar.gz
-        sha256: 67158b1aa67389d4b90fd0ca176829db5ab14bd8cb85366540c58f4dcc4dcbe8
+        sha256: 77d51834a70734edd6a25ed2988162ba4c4dff9a2b5d661bd14b7280cf077d6d
       - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
         sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
 
