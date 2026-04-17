@@ -76,6 +76,15 @@ Package license: GPL-3.0-only
 
 Summary: FastAPI routers providing HTTP endpoints for DiracX services
 
+About diracx-tasks
+------------------
+
+Home: https://diracx.diracgrid.org/
+
+Package license: GPL-3.0-only
+
+Summary: Asynchronous task system for DiracX
+
 About diracx-testing
 --------------------
 
@@ -110,6 +119,7 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--db-green.svg)](https://anaconda.org/conda-forge/diracx-db) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-db.svg)](https://anaconda.org/conda-forge/diracx-db) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-db.svg)](https://anaconda.org/conda-forge/diracx-db) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-db.svg)](https://anaconda.org/conda-forge/diracx-db) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--logic-green.svg)](https://anaconda.org/conda-forge/diracx-logic) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-logic.svg)](https://anaconda.org/conda-forge/diracx-logic) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-logic.svg)](https://anaconda.org/conda-forge/diracx-logic) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-logic.svg)](https://anaconda.org/conda-forge/diracx-logic) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--routers-green.svg)](https://anaconda.org/conda-forge/diracx-routers) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-routers.svg)](https://anaconda.org/conda-forge/diracx-routers) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-routers.svg)](https://anaconda.org/conda-forge/diracx-routers) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-routers.svg)](https://anaconda.org/conda-forge/diracx-routers) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--tasks-green.svg)](https://anaconda.org/conda-forge/diracx-tasks) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-tasks.svg)](https://anaconda.org/conda-forge/diracx-tasks) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-tasks.svg)](https://anaconda.org/conda-forge/diracx-tasks) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-tasks.svg)](https://anaconda.org/conda-forge/diracx-tasks) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-diracx--testing-green.svg)](https://anaconda.org/conda-forge/diracx-testing) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/diracx-testing.svg)](https://anaconda.org/conda-forge/diracx-testing) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/diracx-testing.svg)](https://anaconda.org/conda-forge/diracx-testing) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/diracx-testing.svg)](https://anaconda.org/conda-forge/diracx-testing) |
 
 Installing diracx
@@ -122,16 +132,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `diracx, diracx-api, diracx-cli, diracx-client, diracx-core, diracx-db, diracx-logic, diracx-routers, diracx-testing` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `diracx, diracx-api, diracx-cli, diracx-client, diracx-core, diracx-db, diracx-logic, diracx-routers, diracx-tasks, diracx-testing` can be installed with `conda`:
 
 ```
-conda install diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
+conda install diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-tasks diracx-testing
 ```
 
 or with `mamba`:
 
 ```
-mamba install diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-testing
+mamba install diracx diracx-api diracx-cli diracx-client diracx-core diracx-db diracx-logic diracx-routers diracx-tasks diracx-testing
 ```
 
 It is possible to list all of the versions of `diracx` available on your platform with `conda`:
