@@ -279,14 +279,15 @@ outputs:
         - diracx-core ==${{ version }}
         - diracx-db ==${{ version }}
         - diracx-logic ==${{ version }}
-        - fastapi
+        - diracx-tasks ==${{ version }}
+        - fastapi >=0.121.0
         - httpx
         - joserfc
-        - opentelemetry-api
-        - opentelemetry-exporter-otlp
-        - opentelemetry-instrumentation-fastapi
-        - opentelemetry-instrumentation-logging
-        - opentelemetry-sdk
+        - opentelemetry-api >=1.40.0
+        - opentelemetry-exporter-otlp >=1.40.0
+        - opentelemetry-instrumentation-fastapi >=0.61b0
+        - opentelemetry-instrumentation-logging >=0.61b0
+        - opentelemetry-sdk >=1.40.0
         - pydantic >=2.10
         - python-dotenv
         - python-multipart
@@ -301,6 +302,52 @@ outputs:
 
     about:
       summary: FastAPI routers providing HTTP endpoints for DiracX services
+
+  - package:
+      name: diracx-tasks
+
+    source:
+      - url: https://pypi.org/packages/source/d/diracx-tasks/diracx_tasks-${{ version }}.tar.gz
+        sha256: 119937d38a9f63cfa86893cca7372a03a8500aed627f329dff2a182942ddfde3
+      - url: https://raw.githubusercontent.com/DIRACGrid/diracx/refs/tags/v${{ version }}/LICENSE
+        sha256: bb2af8a15ea39a351e7a95d93cf8e4251c1ae6ae4cac8ee3a89cf9b155cd6e54
+
+    build:
+      script: ${{ PYTHON }} -m pip install .
+      python:
+        entry_points:
+          - diracx-task-run = diracx.tasks.task_run:main
+      noarch: python
+
+    requirements:
+      host:
+        - python ${{ python_min }}.*
+        - hatchling
+        - hatch-vcs
+        - pip
+      run:
+        - python >=${{ python_min }}
+        - croniter
+        - diracx-core ==${{ version }}
+        - diracx-db ==${{ version }}
+        - diracx-logic ==${{ version }}
+        - fastapi >=0.121.0
+        - hiredis
+        - msgpack-python
+        - opentelemetry-api
+        - pydantic >=2.10
+        - python-dateutil
+        - redis-py
+
+    tests:
+      - python:
+          python_version: ${{ python_min }}.*
+          imports:
+            - diracx.tasks
+          pip_check: true
+
+    about:
+      summary: Asynchronous task system for DiracX
 
   - package:
       name: diracx-testing
