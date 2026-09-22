@@ -33,7 +33,7 @@ outputs:
         - python >=${{ python_min }}
         - diracx-client ==${{ version }}
         - diracx-core ==${{ version }}
-        - httpx
+        - httpx2
         - zstandard
 
     tests:
@@ -114,8 +114,9 @@ outputs:
       run:
         - python >=${{ python_min }}
         - azure-core
+        - aiohttp >=3.0 # Needed for azure-core's aio extra
         - diracx-core ==${{ version }}
-        - httpx
+        - httpx2
         - isodate
         - pyjwt
 
@@ -150,17 +151,16 @@ outputs:
         - pip
       run:
         - python >=${{ python_min }}
-        - aiobotocore >=2.15
-        - botocore >=1.35
         - cachetools
-        - diraccommon >=9.0.0
+        - diraccommon >=9.0.18
         - email-validator
         - gitpython
-        - joserfc >=1.1.0
+        - joserfc >=1.5.0
         - pydantic-settings
         - pydantic >=2.10
         - pyyaml
         - sh
+        - signurlarity >=0.3.1
 
     tests:
       - python:
@@ -235,7 +235,7 @@ outputs:
       run:
         - python >=${{ python_min }}
         - cachetools
-        - diraccommon >=9.0.0
+        - diraccommon >=9.0.18
         - diracx-core ==${{ version }}
         - diracx-db ==${{ version }}
         - joserfc
@@ -281,7 +281,7 @@ outputs:
         - diracx-logic ==${{ version }}
         - diracx-tasks ==${{ version }}
         - fastapi >=0.121.0
-        - httpx
+        - httpx2
         - joserfc
         - opentelemetry-api >=1.40.0
         - opentelemetry-exporter-otlp >=1.40.0
@@ -371,7 +371,8 @@ outputs:
       run:
         - python >=${{ python_min }}
         - diracx-core ==${{ version }}
-        - httpx
+        - freezegun
+        - httpx2
         - joserfc
         - pytest
         - pytest-asyncio >=1.1.0
@@ -379,6 +380,7 @@ outputs:
         - pytest-github-actions-annotate-failures
         - pytest-lazy-fixtures
         - pytest-xdist
+        - sqlalchemy
         - uuid-utils
 
     tests:
