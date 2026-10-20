@@ -469,4 +469,5 @@ about:
 extra:
   feedstock-name: diracx
   recipe-maintainers:
+    - natthan-pigoux
     - chrisburr
